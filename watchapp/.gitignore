@@ -1,4 +1,8 @@
-build
+# Dependency directories
 node_modules
-package-lock.json
-yarn.lock
+/node_modules
+
+# build folder
+build
+/build
+

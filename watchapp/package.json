@@ -1,34 +1,35 @@
 {
-  "name": "skateboard",
-  "version": "0.1.0",
-  "private": true,
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "@fitbit/sdk": "~5.0.0",
-    "@fitbit/sdk-cli": "^1.6.3"
-  },
   "fitbit": {
-    "appType": "app",
-    "appDisplayName": "Skateboard",
+    "appUUID": "7b5d9822-7e8e-41f9-a2a7-e823548c001c",
+    "appType": "clockface",
+    "appDisplayName": "Glance 2.1.115",
     "iconFile": "resources/icon.png",
-    "wipeColor": "#ffffff",
+    "wipeColor": "#673ab7",
     "requestedPermissions": [
-      "access_activity",
-      "access_exercise",
-      "access_heart_rate",
+      "access_user_profile",
       "access_location",
-      "access_user_profile"
+      "access_internet",
+      "run_background",
+      "access_activity",
+      "access_heart_rate"
     ],
     "buildTargets": [
-      "higgs",
-      "meson",
-      "gemini"
+      "vulcan",
+      "atlas"
     ],
-    "i18n": {},
-    "appUUID": "a48bf6d0-8b8e-4b7d-863e-3a235e518942"
+    "i18n": {
+      "en": {
+        "name": "Glance 2.0"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.1",
+    "@fitbit/sdk-cli": "^1.7.3"
   },
   "scripts": {
     "build": "fitbit-build",
-    "debug": "fitbit"
+    "build-and-install": "printf 'build-and-install' | npx fitbit",
+    "install": "printf 'install' | npx fitbit"
   }
 }
