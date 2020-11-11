@@ -1,8 +1,8 @@
 {
   "fitbit": {
-    "appUUID": "7b5d9822-7e8e-41f9-a2a7-e823548c001c",
+    "appUUID": "f83e00e5-633b-4fe4-83ba-e389d67d40a3",
     "appType": "clockface",
-    "appDisplayName": "Glance 2.1.115",
+    "appDisplayName": "BrilliAnt",
     "iconFile": "resources/icon.png",
     "wipeColor": "#673ab7",
     "requestedPermissions": [
@@ -19,7 +19,7 @@
     ],
     "i18n": {
       "en": {
-        "name": "Glance 2.0"
+        "name": "BrilliAnt 1.0.0"
       }
     }
   },
